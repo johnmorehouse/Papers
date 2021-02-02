@@ -1,3 +1,3 @@
 # Papers
 
-Sotring current academic papers here
+Storing current academic papers here
