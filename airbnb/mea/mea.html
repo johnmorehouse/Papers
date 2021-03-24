@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>In Search of Peace and Quiet: The Heterogeneous Impacts of Short-Term Rentals on Housing Prices</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Brett Garcia, Keaton Miller &amp; John M. Morehouse" />
+    <script src="mea_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# In Search of Peace and Quiet: The Heterogeneous Impacts of Short-Term Rentals on Housing Prices
+## MEA 2021
+### Brett Garcia, Keaton Miller &amp; John M. Morehouse
+
+---
+
+
+
+
+
+
+# Research Overview
+
+__Research Q:__ How do short-term rentals (STRs) impact housing prices?
+
+
+&amp;#8594; _A lot of papers:_ more STRs `\(\implies\)` higher prices! (why?)&lt;sup&gt;__†__&lt;/sup&gt;
+
+
+.footnote[
+__†__ See Calder-Wang (2019), Fonsesca (2019), Barron et al. (2020), Garcia-López et al. (2020), Valentin (2021) for examples
+]  
+
+
+---
+
+count: false
+# Research Overview
+
+__Research Q:__ How do short-term rentals (STRs) impact housing prices?
+
+
+&amp;#8594; _A lot of papers:_ more STRs `\(\implies\)` higher prices! (why?)&lt;sup&gt;__†__&lt;/sup&gt;
+
+
+.footnote[
+__†__ See Calder-Wang (2019), Fonsesca (2019), Barron et al. (2020), Garcia-López et al. (2020), Valentin (2021) for examples
+]  
+&amp;#8594; Option value of owning a home increases `\(\implies\)` higher demand `\(\implies\)` higher prices. QED
+
+  
+  
+---
+
+
+count: false
+# Research Overview
+
+__Research Q:__ How do short-term rentals (STRs) impact housing prices?
+
+
+&amp;#8594; _A lot of papers:_ more STRs `\(\implies\)` higher prices! (why?)&lt;sup&gt;__†__&lt;/sup&gt;
+
+
+.footnote[
+__†__ See Calder-Wang (2019), Fonsesca (2019), Barron et al. (2020), Garcia-López et al. (2020), Valentin (2021) for examples
+]  
+&amp;#8594; Option value of owning a home increases `\(\implies\)` higher demand `\(\implies\)` higher prices. QED
+
+  
+## Is that it?
+
+&amp;#8594; Could STRs lower housing values under any circumstances? We think so
+
+
+---
+
+count: false
+# Research Overview
+
+__Research Q:__ How do short-term rentals (STRs) impact housing prices?
+
+
+&amp;#8594; _A lot of papers:_ more STRs `\(\implies\)` higher prices! (why?)&lt;sup&gt;__†__&lt;/sup&gt;
+
+
+.footnote[
+__†__ See Calder-Wang (2019), Fonsesca (2019), Barron et al. (2020), Garcia-López et al. (2020), Valentin (2021) for examples
+]  
+&amp;#8594; Option value of owning a home increases `\(\implies\)` higher demand `\(\implies\)` higher prices. QED
+
+  
+## Is that it?
+
+&amp;#8594; Could STRs lower housing values under any circumstances? We think so
+
+&amp;#8594; .orange_b[Key idea:] The effect of STRs on residential amenities is ambiguous (more later)
+
+---
+
+
+
+# Plan
+
+__Goal:__ Demonstrate theoretically that the effect of STRs on housing prices is ambiguous. Empirically substantiate this claim.
+
+
+---
+
+
+count: false
+# Plan
+__Goal:__ Demonstrate theoretically that the effect of STRs on housing prices is ambiguous. Empirically substantiate this claim.
+
+1) .orange_b[Background]
+
+2) .orange_b[Highly stylized model]
+.ul[
+  &amp;#8594; Illustrate a potential mechanism for ambiguity
+]
+
+3) .orange_b[Panel Regression]: demonstrate heterogeneous effects of Airbnb listings on housing pirces
+.ul[
+  &amp;#8594; use a (not novel) instrument for Airbnb listings
+]
+
+
+4) .orange_b[Event Study]: 
+.ul[
+  &amp;#8594; Hilarious descriptive evidence for proposed mechanism
+]
+
+
+---
+
+
+
+
+count: false
+# Plan
+__Goal:__ Demonstrate theoretically that the effect of STRs on housing prices is ambiguous. Empirically substantiate this claim.
+
+1) .orange_b[Background]
+
+2) .orange_b[Highly stylized model]
+.ul[
+  &amp;#8594; Illustrate a potential mechanism for ambiguity
+]
+
+3) .orange_b[Panel Regression]: demonstrate heterogeneous effects of Airbnb listings on housing pirces
+.ul[
+  &amp;#8594; use a (not novel) instrument for Airbnb listings
+]
+
+
+4) .orange_b[Event Study]: 
+.ul[
+  &amp;#8594; Hilarious descriptive evidence for proposed mechanism
+]
+
+
+__What we won't do:__ provide _causal_ evidence for our mechanism
+
+
+---
+
+
+
+
+
+# STRs in the News
+
+&lt;img src="figures/combined.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="figures/rosville_ban.png" width="50%" height="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Regulating STRs
+
+&amp;#8594; Neither California nor the U.S. federal government explicitly regulates STRs 
+
+
+
+---
+
+
+count: false
+# Regulating STRs
+
+&amp;#8594; Neither California nor the U.S. federal government explicitly regulates STRs 
+
+
+&amp;#8594; We focus on Santa Monica's .orange_b[Ordinance 2484CCS], which was adopted by its City Council on May 12, 2015. Went into effect in June
+
+ -  According to staff reports and the text of the measure STRs removed "needed permanent housing from the market" and transient visitors could ".orange_b[disrupt the quietude]... of the neighborhoods and adversely impact the community"
+ 
+ - Nominally banned owner-absent STRs, while allowing owner-present STRs to continue with additional costs (taxes, reporting, etc)
+
+---
+
+count: false
+# Regulating STRs
+
+&amp;#8594; Neither California nor the U.S. federal government explicitly regulates STRs 
+
+
+&amp;#8594; We focus on Santa Monica's .orange_b[Ordinance 2484CCS], which was adopted by its City Council on May 12, 2015. Went into effect in June
+
+ -  According to staff reports and the text of the measure STRs removed "needed permanent housing from the market" and transient visitors could ".orange_b[disrupt the quietude]... of the neighborhoods and adversely impact the community"
+ 
+ - Nominally banned owner-absent STRs, while allowing owner-present STRs to continue with additional costs (taxes, reporting, etc)
+
+&amp;#8594; Airbnb (and other platforms) quickly sued the city, which made enforcement difficult. City prevailed.
+
+
+---
+
+
+
+
+
+
+
+
+class: inverse, center, middle
+# Model
+
+
+---
+
+# Overview
+
+.orange_b[Goal]: Demonstrate that the effects of STRs on housing prices is ambiguous in _as parsimonious_ of a framework as possible
+
+.ul[
+  &amp;#8594; Intentionally abstract from anything except our __main mechanism__: the interplay between STRs and residential amenities
+]
+
+
+
+---
+
+count: false
+# Overview
+
+.orange_b[Goal]: Demonstrate that the effects of STRs on housing prices is ambiguous in _as parsimonious_ of a framework as possible
+
+.ul[
+  &amp;#8594; Intentionally abstract from anything except our __main mechanism__: the interplay between STRs and residential amenities
+]
+
+__Main Ingredients:__
+
+.ul[
+  &amp;#8594; Static, discrete choice over nbhd , `\(j\)` , and owner-status `\(k \in \{o, a\}\)`.
+  
+  &amp;#8594; Fixed quantity of housing in each nbhd, `\(H_j\)` and an exogenous number of rep. agents in market `\(N\)`
+]
+
+---
+
+
+
+# Model: Utility
+
+Utility for owning in nbhd `\(j\)`:
+
+`\begin{align*}
+u_{i,j,o} = \xi_j(k_j, f(str_j), g(str_j)) - P_j + \epsilon_{i,j,o}\\
+u_{i,j,a} =  \frac{R_j}{1-\delta} - P_j+ \epsilon_{i,j,a}
+\end{align*}`
+
+Where: `\(P_j\)` is the housing price, `\(R_j\)` is the rental price, `\(\delta\)` is the discount rate, and `\(\epsilon\)` is an iid preference shock
+
+
+---
+
+
+
+count: false
+# Model: Utility
+
+Utility for owning in nbhd `\(j\)`:
+
+`\begin{align*}
+u_{i,j,o} = \xi_j(k_j, f(str_j), g(str_j)) - P_j + \epsilon_{i,j,o}\\
+u_{i,j,a} =  \frac{R_j}{1-\delta} - P_j+ \epsilon_{i,j,a}
+\end{align*}`
+
+Where: `\(P_j\)` is the housing price, `\(R_j\)` is the rental price, `\(\delta\)` is the discount rate, and `\(\epsilon\)` is an iid preference shock
+
+`\(\xi_j:\mathbb{R}^3 \to \mathbb{R}\)`: maps three local features to a scalar amenity value. 
+
+.ul[
+ &amp;#8594; `\(k_j\)`: fixed, time-invariant amenity level unrelated to STRs
+  
+&amp;#8594; `\(f(str_j)\)`: the "good" amenities that come with STRs (_e.g_ extra restaurants). __Assume:__ `\(f'&gt;0\)`
+
+&amp;#8594; `\(g(str_j)\)`  the "bad" amenities that come with STRs (more partying?). __Assume:__ `\(g'&gt;0\)`
+]
+
+---
+
+
+# Amenities
+
+Under the assumption that STRs impact local amenities positively and negatively, it follows that:
+
+`\begin{align*}
+\frac{\partial \xi_j }{\partial str_j} = \underbrace{\frac{\partial \xi_j}{\partial f}}_{+} \times\underbrace{f'(str_j)}_{+} + \underbrace{\frac{\partial \xi_j }{\partial g }}_{-}\times\underbrace{g'(str_j)}_{+}
+\end{align*}`
+
+
+
+---
+
+
+
+count: false
+# Amenities
+
+Under the assumption that STRs impact local amenities positively and negatively, it follows that:
+
+`\begin{align*}
+\frac{\partial \xi_j }{\partial str_j} = \underbrace{\frac{\partial \xi_j}{\partial f}}_{+} \times\underbrace{f'(str_j)}_{+} + \underbrace{\frac{\partial \xi_j }{\partial g }}_{-}\times\underbrace{g'(str_j)}_{+}
+\end{align*}`
+
+.orange_b[Key Idea]: __The net impact of STRs on residential amenities is ambigious__
+
+ &amp;#8594; STRs may have positive impacts on residential amenities (added restaurants)
+
+ &amp;#8594; STRs also may have negative impacts on residential amenities (more noise)
+ 
+
+---
+
+
+# Partial Derivatives
+
+
+Consider a regulation that changes the return on holding a STR. What happens to equilibrium housing prices?
+
+$$
+\frac{\partial P_j^\star}{\partial R_j} = \frac{ 1}{ \exp( \frac{R_j}{1-\delta}      )  + \exp(  \xi_j(\cdot) ) )  } \left(   \frac{\exp( \frac{R_j}{1-\delta})}{1-\delta} +  \exp(  \xi_j(\cdot)) \times \frac{\partial \xi_j}{\partial str^\star} \times \frac{\partial str^\star_j}{\partial R_j}     \right) \\
+$$
+
+__3 (non-trivial cases):__
+
+
+ .orange_b[Case 1:] `\(\frac{\partial \xi_j}{\partial str^\star} &gt; 0 \implies \frac{\partial P_j^\star}{\partial R_j}&gt;0\)`:
+
+  - _STRs create net-positive amenities_
+
+
+
+
+
+---
+
+
+
+
+
+
+
+count: false
+# Partial Derivatives
+
+
+Consider a regulation that changes the return on holding a STR. What happens to equilibrium housing prices?
+
+$$
+\frac{\partial P_j^\star}{\partial R_j} = \frac{ 1}{ \exp( \frac{R_j}{1-\delta}      )  + \exp(  \xi_j(\cdot) ) )  } \left(   \frac{\exp( \frac{R_j}{1-\delta})}{1-\delta} +  \exp(  \xi_j(\cdot)) \times \frac{\partial \xi_j}{\partial str^\star} \times \frac{\partial str^\star_j}{\partial R_j}     \right) \\
+$$
+
+__3 (non-trivial cases):__
+
+ .orange_b[Case 1:] `\(\frac{\partial \xi_j}{\partial str^\star} &gt; 0 \implies \frac{\partial P_j^\star}{\partial R_j}&gt;0\)`:
+
+
+ .orange_b[Case 2:] `\(\frac{\partial \xi_j}{\partial str^\star} &lt; 0\)` and `\(\frac{\exp( \frac{R_j}{1-\delta})}{1-\delta} &gt; \left | \exp(  \xi_j(\cdot)) \times \frac{\partial \xi_j}{\partial str^\star} \times \frac{\partial str^\star_j}{\partial R_j} \right | \implies \frac{\partial P_j^\star}{\partial R_j}&gt;0\)`:
+
+  - _STRs create net-negative amenities and the magnitude of the change in the marginal benefit to absentee landlords exceeds the magnitude of the change in marginal benefit to owner-occupiers_
+
+
+
+---
+
+
+
+
+count: false
+# Partial Derivatives
+
+
+Consider a regulation that changes the return on holding a STR. What happens to equilibrium housing prices?
+
+$$
+\frac{\partial P_j^\star}{\partial R_j} = \frac{ 1}{ \exp( \frac{R_j}{1-\delta}      )  + \exp(  \xi_j(\cdot) ) )  } \left(   \frac{\exp( \frac{R_j}{1-\delta})}{1-\delta} +  \exp(  \xi_j(\cdot)) \times \frac{\partial \xi_j}{\partial str^\star} \times \frac{\partial str^\star_j}{\partial R_j}     \right) \\
+$$
+
+__3 (non-trivial cases):__
+
+
+ .orange_b[Case 1:] `\(\frac{\partial \xi_j}{\partial str^\star} &gt; 0 \implies \frac{\partial P_j^\star}{\partial R_j}&gt;0\)`:
+
+
+ .orange_b[Case 2:] `\(\frac{\partial \xi_j}{\partial str^\star} &lt; 0\)` and `\(\frac{\exp( \frac{R_j}{1-\delta})}{1-\delta} &gt; \left | \exp(  \xi_j(\cdot)) \times \frac{\partial \xi_j}{\partial str^\star} \times \frac{\partial str^\star_j}{\partial R_j} \right | \implies \frac{\partial P_j^\star}{\partial R_j}&gt;0\)`:
+
+
+ .orange_b[Case 3:] `\(\frac{\partial \xi_j}{\partial str^\star} &lt; 0\)` and `\(\frac{\exp( \frac{R_j}{1-\delta})}{1-\delta} &lt; \left | \exp(  \xi_j(\cdot)) \times \frac{\partial \xi_j}{\partial str^\star} \times \frac{\partial str^\star_j}{\partial R_j} \right | \implies \frac{\partial P_j^\star}{\partial R_j} &lt; 0\)`:
+
+  - __STRs create net-negative amenities and the decrease in the marginal benefit to owner-occupiers exceeds the decrease in the marginal benefit to absentee landlords.__
+
+
+
+---
+
+
+# Recap
+
+Built a parsimonious model that suggests the effects of STRs on housing prices is ambiguous
+
+.ul[
+
+&amp;#8594; Intentionally made it as simple as possible. .orange_b[Minimal assumption:] STR impact on amenities is ambiguous
+
+&amp;#8594; Model makes it clear that that `\(\frac{\partial P_j^\star}{\partial R_j}&lt;0\)` is an edge case but still possible
+
+
+&amp;#8594; __No sharp predictions about__ `\(\xi\)`  
+]
+
+
+---
+
+
+
+count: false
+# Recap
+
+Built a parsimonious model that suggests the effects of STRs on housing prices is ambiguous
+
+.ul[
+
+&amp;#8594; Intentionally made it as simple as possible. .orange_b[Minimal assumption:] STR impact on amenities is ambiguous
+
+&amp;#8594; Model makes it clear that that `\(\frac{\partial P_j^\star}{\partial R_j}&lt;0\)` is an edge case but still possible
+
+
+&amp;#8594; __No sharp predictions about__ `\(\xi\)`  
+]
+
+## Question
+
+&amp;#8594;  Is this just a theoretical curiosity? We turn to test our theory empirically.
+
+---
+
+
+
+class: inverse, center, middle
+# Empirics: Panel Regressions
+
+
+---
+
+# Data overview
+
+We combine data from multiple sources:
+
+- .orange_b[Zillow]: Monthly housing price indices (ZHVI) at _zip code level_
+
+- .orange_b[Inside Airbnb + Tomslee]: Publicly available, scraped Airbnb listings
+
+.ul[
+
+&amp;#8594; Scraped at irregular intervals -- combine them to get largest possible sample
+
+&amp;#8594; Characteristics of listings, location accurate to within 500m
+
+]
+  
+
+__Focus Area:__ Los Angeles County. Estimation window: July 2015-June 2017
+
+---
+
+
+
+# Specification
+
+
+Using our model to guide the empirics, we estimate:
+
+`\begin{align}
+    \log(ZHVI_{zjt}) = \beta_{0j} + \beta_{1j}\log(listings_{zjt}) + FX + \epsilon_{zjt}%\label{eq:est_eqn-1} \\
+    %\log(ZHVI_{jct}) = \beta_0 + \beta_1\log(R_{jct}) + FX + \eta_{jct}\label{eq:est_eqn-2}  
+\end{align}`
+
+where:
+
+&amp;#8594; `\(ZHVI_{jct}\)` is the Zillow Home Value Index for zip code `\(z\)` in jurisdiction `\(j\)` at year-month time `\(t\)` 
+
+&amp;#8594; `\(listings_{zjt}\)` is the number of Airbnb listings
+
+&amp;#8594; `\(FX\)` is a set of fixed effects
+
+&amp;#8594; `\(\epsilon_{zjt}\)` is an unobservable
+
+We use an instrument from Barron et. al (2020) for listings:
+
+  - Interact google search hits for Airbnb, `\(g_t^{air}\)`, with num. of restaurants and accomodations estab (NAICS 72) in 2010, `\(b_{zj}^{2010}\)`
+
+---
+
+
+
+# Results
+&lt;img src="figures/iv_results.png" width="75%" height="75%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Results
+
+
+&lt;img src="figures/coefficient_histogram.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+class: inverse, center, middle
+# Empirics: Event Study Evidence
+
+
+---
+
+# Idea and Data
+
+We provide _descriptive_ evidence of our proposed mechanism, using calls to police
+
+&amp;#8594; .orange_b[Hypothesis:] Nuisance calls to police decline after STRs are regulated in SM (may in part negative estimated coefficient)
+
+
+&amp;#8594; .orange_b[Data:] Santa Monica Open Data Project for 2013--2019
+
+.ul[
+
+&amp;#8594; Geolocated calls with reason for the call
+
+&amp;#8594; Define a call `\(k\)` as being party related if it was for `loud music`, `public intoxication` or `noise complaint`
+
+&amp;#8594; Event study with pre-post as policy date STR regulation went into place
+
+]
+---
+
+
+# Listings over time
+&lt;img src="figures/num_listings.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Event Study
+
+&lt;img src="figures/crime_event.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Public Intoxication
+&lt;img src="figures/public_intox.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Conclusion
+
+__Main takeaways__
+
+&amp;#8594; Literature has exclusively focused on STRs and _rising_ housing prices
+
+&amp;#8594; We point out that this is probably right .orange_b[on average]
+
+.ul[
+- Averages mask heterogeneity! 
+
+- Less important if this heterogeneity means `\(\frac{\partial P_j^\star}{\partial str_j^\star}\)` still always positive
+]
+
+ __Policy implication__: regulating STRs in the name of housing affordability _may_ backfire. 
+
+&amp;#8594; Much more work to be done here, though
+
+---
+
+class: middle, inverse, center
+# Thank you!!
+
+Questions? Comments? Concerns?
+
+jmorehou@uoregon.edu
+
+
+
+https://www.johnmmorehouse.com/
+
+---
+
+exclude: true
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
