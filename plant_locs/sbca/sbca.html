@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Downwind and Out: The Strategic Dispersion of Power Plants and Their Pollution</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="John M. Morehouse &amp; Edward Rubin" />
+    <script src="sbca_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Downwind and Out: The Strategic Dispersion of Power Plants and Their Pollution
+## SBCA, March 2021
+### John M. Morehouse &amp; Edward Rubin
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+@media print {
+  .has-continuation {
+    display: block;
+  }
+}
+&lt;/style&gt;
+
+# Air Quality Regulation
+
+
+Air-quality regulation in the US has typically followed a federalist approach.
+
+The Clean Air Act of 1963 (and subsequent amendments):
+
+---
+
+count: false
+# Air Quality Regulation
+
+Air-quality regulation in the US has typically followed a federalist approach.
+
+ The Clean Air Act of 1963 (and subsequent amendments):
+
+  - __Federal__ agencies set national ambient air quality standards (NAAQS)
+  
+  - __State__ governments enforce NAAQS (setting implementation plans, among other things)
+  
+  - __Local__ governments monitor air quality and participate in siting polluters/monitors
+  
+---
+
+
+count: false
+# Air Quality Regulation
+
+Air-quality regulation in the US has typically followed a federalist approach.
+
+The Clean Air Act of 1963 (and subsequent amendments):
+
+
+  - __Federal__ agencies set national ambient air quality standards (NAAQS)
+  
+  - __State__ governments enforce NAAQS (setting implementation plans, among other things)
+  
+  - __Local__ governments monitor air quality and participate in siting polluters/monitors
+  
+  
+.red_b[Problem]: Air pollution can travel long distances and not all counties are monitored
+
+  - Regulation &amp; enforcement are complicated!
+
+
+---
+
+
+# Our paper
+
+This paper has 3 main goals:
+
+
+---
+
+
+count: false
+# Our paper
+
+This paper has 3 main goals:
+
+**1.** Describe the geography of a major class of polluters: power plants
+
+
+
+---
+
+count: false
+# Our paper
+
+This paper has 3 main goals:
+
+**1.** Describe the geography of a major class of polluters: power plants
+
+**2.** Identify reasons (both strategic _and_ non-strategic) for observed patterns
+
+
+---
+
+count: false
+# Our paper
+
+This paper has 3 main goals:
+
+**1.** Describe the geography of a major class of polluters: power plants
+
+**2.** Identify reasons (both strategic _and_ non-strategic) for observed patterns
+
+**3.** Illustrate the extent of the pollution-transport problem
+
+---
+
+
+count: false
+# Our paper
+
+This paper has 3 main goals:
+
+**1.** Describe the geography of a major class of polluters: power plants
+
+**2.** Identify reasons (both strategic _and_ non-strategic) for observed patterns
+
+**3.** Illustrate the extent of the pollution-transport problem
+
+.red_b[Why?] Air-pollution regulation and monitoring is fraught with complexity.
+
+   We shed light on additional challenges regulators face under the current, federalist system.
+  
+---
+
+
+# Literature
+
+In general, our work is related to two strands of literature:
+
+__Strategy and the CAA__
+
+
+---
+
+
+count: false
+# Literature
+
+In general, our work is related to two strands of literature:
+
+__Strategy and the CAA__ 
+
++ Downwind siting for polluters as a strategy (_e.g._ Monogan III et. al (2017))
+
++ Strategic abatement decisions (_e.g._ Zou, 2020) 
+
++ Strategic _monitor_ placement (_e.g._ Grainger et. al, 2018)
+
+
+---
+
+
+count: false
+# Literature
+
+In general, our work is related to two strands of literature:
+
+__Strategy and the CAA__
+
++ Downwind siting for polluters as a strategy (_e.g._ Monogan III et. al (2017))
+
++ Strategic abatement decisions (_e.g._ Zou, 2020) 
+
++ Strategic _monitor_ placement (_e.g._ Grainger et. al, 2018)
+
+
+__Pervasiveness and problems with pollution transfer__
+
++ Sergi et. al (2020), Wang et. al (2020), Tessum et. al (2017)
+
+  + Quantify extent of pollution transport in general + costs (health damages)
+
+---
+
+
+
+
+
+class: middle, inverse, center
+# The Geography of US Power Plants
+
+---
+
+
+
+# Data Sources
+
+
+.red_b.purple[Generator Data:] `Emissions &amp; Generation Integrated Database (eGRID)` and `EPAs EmPOWER Air Data Challenge`.
+    
+
+---
+
+
+count: false
+# Data Sources
+
+
+.red_b.purple[Generator Data:] `Emissions &amp; Generation Integrated Database (eGRID)` and `EPAs EmPOWER Air Data Challenge`. 
+    
+.red_b.purple[Geography:] 
+
+  - `US Census Bureau Tiger/Line` shapefiles for county, state, and water features.  
+  
+  - `EPA's Greenbook NAYRO` file for county non-attainment histories 
+
+
+
+---
+
+
+count: false
+# Data Sources
+
+
+.red_b.purple[Generator Data:] `Emissions &amp; Generation Integrated Database (eGRID)` and `EPAs EmPOWER Air Data Challenge`. 
+    
+    
+.red_b.purple[Geography:] 
+
+  - `US Census Bureau Tiger/Line` shapefiles for county, state, and water features.  
+  
+  - `EPA's Greenbook NAYRO` file for county non-attainment histories 
+
+
+.red_b.purple[Meteorology:] `NOAA's North American Regional Reanalysis` (NARR) daily data
+
+   Historic wind patterns at various pressure levels. 32km `\(\times\)` 32km grid cells across contigous US
+
+---
+
+
+# Distances to County Borders
+
+&lt;img src="final_figs/county_dist_1.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+count: false
+# Distances to County Borders
+
+&lt;img src="final_figs/county_dist_2.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Distances to State Borders
+
+&lt;img src="final_figs/state_dist_1.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+count: false
+# Distances to State Borders
+
+&lt;img src="final_figs/state_dist_2.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+
+
+
+# Water Borders: Example
+
+.col-left[
+&lt;img src="figures/borders-water-41.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="figures/borders-water-22.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+]
+.col-right[
+
+&lt;img src="figures/borders-water-46.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="figures/borders-water-45.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+
+---
+
+
+
+
+
+
+# A test for regulatory avoidance
+
+We can't say strategy .red_b[caused] border siting.
+
+
+---
+
+count: false
+# A test for regulatory avoidance
+
+We can't say strategy .red_b[caused] border siting.
+
+.red_b[Question:] Do power-plants (excluding maybe wind) use the ratio of upwind/downwind area within their own county/state to produce electricity?
+
+
+---
+
+count: false
+# A test for regulatory avoidance
+
+We can't say strategy .red_b[caused] border siting.
+
+.red_b[Question:] Do power-plants (excluding maybe wind) use the ratio of upwind/downwind area within their own county/state to produce electricity?
+
+  - Seems unlikely
+  
+  - This is the basis for our identification strategy.
+
+---
+
+
+
+count: false
+# A test for regulatory avoidance
+
+We can't say strategy .red_b[caused] border siting.
+
+.red_b[Question:] Do power-plants (excluding maybe wind) use the ratio of upwind/downwind area within their own county/state to produce electricity?
+
+  - Seems unlikely
+  
+  - This is the basis for our identification strategy.
+  
+  -  Why would a smaller downwind area within a county be advantageous for a polluter? .red_b[Emissions will exit the jurisdiction faster].
+
+
+---
+
+
+count: false
+# A test for regulatory avoidance
+
+We can't say strategy .red_b[caused] border siting.
+
+.red_b[Question:] Do power-plants (excluding maybe wind) use the ratio of upwind/downwind area within their own county/state to produce electricity?
+
+  - Seems unlikely
+  
+  - This is the basis for our identification strategy.
+  
+  -  Why would a smaller downwind area within a county be advantageous for a polluter? .red_b[Emissions will exit the jurisdiction faster].
+
+__Main Idea:__ In the absence of regulatory avoidance, it should be a 50-50 flip whether the county’s area downwind of the plant (in the EGU’s county of residence) is larger or smaller than the area upwind.
+
+  - .red_b[Focus]: coal. Strongest incentive to avoid regulation.
+  
+  - .red_b[Placebo]: natural gas. Less incentive to avoid regulation.
+  
+
+
+---
+
+
+# Downwind vs. Upwind Area
+
+&lt;img src="final_figs/upwind_downwind_1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Formalizing the test
+
+Our test is implemented via a .red_b[Fisher's exact test]
+
+.col-left[
+
+- Sharp Null: _no strategic siting to reduce downwind area_
+
+]
+
+
+---
+
+
+
+count: false
+# Formalizing the test
+
+Our test is implemented via a .red_b[Fisher's exact test]
+
+.col-left[
+
+- Sharp Null: _no strategic siting to reduce downwind area_
+
+- Test stat `\(n_s\stackrel{H_0}{\sim} B(N_T,.5)\)`
+
+  - `\(n_s\)`: # plants for whom downind area `\(&lt;\)` upwind area
+  - `\(N_T\)`: total # plants (within fuel type)
+  
+- `\(p(n_s) =\sum\limits_{x = n_s}^{N^T}{N_T \choose x}\times 0.5^{N_T}\)`
+
+]
+
+
+
+---
+
+
+
+count: false
+# Formalizing the test
+
+Our test is implemented via a .red_b[Fisher's exact test]
+
+.col-left[
+
+- Sharp Null: _no strategic siting to reduce downwind area_
+
+- Test stat `\(n_s\stackrel{H_0}{\sim} B(N_T,.5)\)`
+
+  - `\(n_s\)`: # plants for whom downind area `\(&lt;\)` upwind area
+  - `\(N_T\)`: total # plants (within fuel type)
+  
+  
+- `\(p(n_s) =\sum\limits_{x = n_s}^{N^T}{N_T \choose x}\times 0.5^{N_T}\)`
+
+]
+
+.col-right[
+
+➕ Simple and plausible identifiying assumption
+
+➕ Calculate _exact_ p-values. No parameteric assumptions required!
+
+➕ Convenient falsificaton test: Natural gas
+
+]
+
+---
+
+
+
+count: false
+# Formalizing the test
+
+Our test is implemented via a .red_b[Fisher's exact test]
+
+.col-left[
+
+- Sharp Null: _no strategic siting to reduce downwind area_
+
+- Test stat `\(n_s\stackrel{H_0}{\sim} B(N_T,.5)\)`
+
+  - `\(n_s\)`: # plants for whom downind area `\(&lt;\)` upwind area
+  - `\(N_T\)`: total # plants (within fuel type)
+  
+  
+- `\(p(n_s) =\sum\limits_{x = n_s}^{N^T}{N_T \choose x}\times 0.5^{N_T}\)`
+
+]
+
+.col-right[
+
+➕ Simple and plausible identifiying assumption
+
+➕ Calculate _exact_ p-values. No parameteric assumptions required!
+
+➕ Convenient falsificaton test: Natural gas
+
+➖ Major drawback: cannot capture more nuanced strategy
+
+
+]
+
+---
+
+
+# Strategic Siting: Main Results
+
+&lt;img src="final_figs/table_header.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/panel_a.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+count: false
+# Strategic Siting: Main Results
+
+&lt;img src="final_figs/table_header.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/panel_b.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: middle, inverse, center
+# The Geography of US Coal Emissions
+
+---
+
+
+# Overview
+
+We quantify the nature of the pollution transfer problem
+
+
+
+  
+---
+
+
+count: false
+# Overview
+
+We quantify the nature of the pollution transfer problem.
+
+__Model__: __HY__brid __S__ingle-__P__article __L__agrangian __I__ntegrated __T__rajectory (HYSPLIT) 
+
+  - Atmospheric dispersion model. Heavily vetted by NOAA. 
+  
+  - Performs better than many other models (such as InMAP) for _long-distance_ pollution transport modeling.
+ 
+
+  
+---
+
+
+
+count: false
+# Overview
+
+We quantify the nature of the pollution transfer problem.
+
+__Model__: __HY__brid __S__ingle-__P__article __L__agrangian __I__ntegrated __T__rajectory (HYSPLIT) 
+
+  - Atmospheric dispersion model. Heavily vetted by NOAA. 
+  
+  - Performs better than many other models (such as InMAP) for _long-distance_ pollution transport modeling.
+ 
+ 
+ - Coal-based particles will travel much further than other sources of PM.
+
+  
+---
+
+
+
+
+# Hysplit: Goals
+
+We do the following:
+
+ 1) Quantify how quickly coal-based particles leave their own county and state (it's fast).
+ 
+ 2) Quantify the proportion of coal-based emissions that are from other counties/states in any given county/state.
+ 
+ 3) Illustrate the implications of 1) and 2) with case studies.
+ 
+ 
+---
+ 
+# Example Plants
+ 
+&lt;img src="final_figs/example_plants_1.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/col_bar.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+ 
+---
+
+count: false
+# Example Plants
+ 
+&lt;img src="final_figs/example_plants_2.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/col_bar.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
+ 
+---
+
+# Emissions Transport: Speed
+
+&lt;img src="final_figs/speed_1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/speed_legend.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+---
+
+
+# Emissions Transport: Speed
+
+&lt;img src="final_figs/speed_2.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/speed_legend.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+---
+
+
+# Emissions Transport: Shares
+
+&lt;img src="final_figs/hysplit_1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;&lt;img src="final_figs/hysplit_legend.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+---
+
+
+
+class: middle, inverse, center
+
+# Discussion
+
+---
+
+# What did we do?
+
+__Main contributions__:
+
+  - Descriptive results on the geography of physical power plants _and_ their emissions.
+  
+    - Causal evidence of coal plants strategically locating to minimize downwind area.
+  
+  - Clean Air Act did not seem to impact strategic siting. 
+  
+  - Descriptive results on pervasiveness of pollution transport problem from coal powered plants.
+
+
+---
+
+
+
+class: middle, inverse, center
+# Thank you!
+
+email: jmorehou@uoregon.edu
+
+web: www.johnmmorehouse.com
+
+---
+
+exclude: true
+ 
+
+ 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
